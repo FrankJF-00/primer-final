@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <article>
+        <img src="img/backend-icon.png" alt="" />
+        <h1>Franx backend</h1>
+      </article>
+      <article class="header-nav">
+        <ul>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Logout</a></li>
+          <li><img src="img/color-wheel.png" id="color-wheel" alt="" /></li>
+        </ul>
+      </article>
+    </header>
+    <main>
+      <aside>
+        <section class="sidebar-container">
+          <section class="user-info">
+            <img class="user-icon" src="img/user-icon.png" alt="" />
+            <article>
+              <h3 class="user-name">Heinz Heinzer</h3>
+              <p class="user-role">admin</p>
+            </article>
+          </section>
+          <section class="sidebar-nav">
+            <article>
+              <ul>
+                <li>
+                  <img src="img/dashboard.png" alt="" /><a
+                    href="#"
+                    class="sidebar-item"
+                    >Dashboard</a
+                  >
+                </li>
+                <li>
+                  <img src="img/user.png" alt="" /><a
+                    href="#"
+                    class="sidebar-item"
+                    >Profile</a
+                  >
+                </li>
+                <li>
+                  <img src="img/data-analytics.png" alt="" /><a
+                    href="#"
+                    class="sidebar-item"
+                    >Analytics</a
+                  >
+                </li>
+                <li>
+                  <img src="img/report.png" alt="" /><a
+                    href="#"
+                    class="sidebar-item"
+                    >Reports</a
+                  >
+                </li>
+                <li>
+                  <img src="img/folder.png" alt="" /><a
+                    href="#"
+                    class="sidebar-item"
+                    >Archive</a
+                  >
+                </li>
+              </ul>
+            </article>
+          </section>
+          <article class="upgrade">
+            <h3>Upgrade to Pro!</h3>
+            <p>Change your plan to see more stuff.</p>
+            <a href="#">Upgrade Plan</a>
+          </article>
+        </section>
+      </aside>
+      <section class="content">
+        <h2 id="current-location">Dashboard</h2>
+        <section class="content-wrapper">
+          <section class="sales-container">
+            <article class="sales-item">
+              <p>Product Sales</p>
+              <p class="some-income">3,50 €</p>
+              <p class="some-percentage">
+                <img src="img/up-arrow.png" alt="" />+12,5%
+              </p>
+            </article>
+            <article class="sales-item">
+              <p>Product Sales</p>
+              <p class="some-income">3,50 €</p>
+              <p class="some-percentage">
+                <img src="img/down-arrow.png" alt="" />-12,5%
+              </p>
+            </article>
+            <article class="sales-item">
+              <p>Product Sales</p>
+              <p class="some-income">3,50 €</p>
+              <p class="some-percentage">
+                <img src="img/up-arrow.png" alt="" />+12,5%
+              </p>
+            </article>
+            <article class="sales-item">
+              <p>Product Sales</p>
+              <p class="some-income">3,50 €</p>
+              <p class="some-percentage">
+                <img src="img/up-arrow.png" alt="" />+12,5%
+              </p>
+            </article>
+          </section>
+          <section class="graph-container">
+            <section class="graph-item">
+              <h3>Revenue</h3>
+            </section>
+            <section class="graph-item">
+              <ul>
+                <li><a href="#" id="1" class="filter-btn">12 month</a></li>
+                <li><a href="#" id="2" class="filter-btn">30 days</a></li>
+                <li><a href="#" id="3" class="filter-btn">7 days</a></li>
+                <li><a href="#" id="4" class="filter-btn">24 hours</a></li>
+              </ul>
+            </section>
+            <section class="graph-item">
+              <article id="chart-container">
+                <canvas id="myChart"></canvas>
+              </article>
+              <img id="placeholder-img" src="img/placeholder.PNG" alt="" />
+            </section>
+          </section>
+        </section>
+        <section class="main-footer">
+          <p>&copy; Franky</p>
+        </section>
+      </section>
+      <section id="color-dialogue">
+        <h3>Choose your favorite color!</h3>
+        <a class="color-btn" title="#008080" href="#">#B2D8D8</a>
+        <a class="color-btn" title="#3b5998" href="#">#8b9dc3</a>
+        <a class="color-btn" title="#ff8b94" href="#">#ffaaa5</a>
+        <a class="color-btn" title="#01cdfe" href="#">#b967ff</a>
+        <a class="color-btn" title="#FFC700" href="#">#4CCD99</a>
+        <a class="color-btn" title="#4CCD99" href="#">#FFC700</a>
+        <a class="color-btn" title="deeppink" href="#">#222831</a>
+        <button id="close"><img src="img/cross.png" alt="" /></button>
+      </section>
+    </main>
+  </body>
+</html>
